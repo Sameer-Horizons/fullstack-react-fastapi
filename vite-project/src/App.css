@@ -1,0 +1,377 @@
+body {
+    background: linear-gradient(to left, #f1d131, #ffffff);
+}
+
+.logoimg {
+    height: 2.5rem;
+}
+
+.Nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 2rem;
+    margin-top: -8px;
+}
+
+.H1 {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 10px #333;
+}
+
+.Navlist {
+    display: flex;
+    gap: 6rem;
+    margin-right: 8rem;
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    list-style-type: none;
+    border-radius: 0.5rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 2.2rem;
+    list-style-type: none;
+    border-radius: 0.5rem;
+}
+
+.login-button {
+    margin-left: 35rem;
+    margin-top: -4.3rem;
+    width: 4.5rem;
+    height: 1.5rem;
+    list-style-type: none;
+    border-radius: 0.5rem;
+}
+
+.login-button1 {
+    margin-left: 0rem;
+    margin-top: -1rem;
+    width: 4.5rem;
+    height: 1.5rem;
+    list-style-type: none;
+    border-radius: 0.5rem;
+}
+
+.P1 {
+    margin-left: 34rem;
+    margin-top: 2rem;
+    color: white;
+    background-color: rgb(167, 77, 77);
+    border-radius: 2rem;
+    width: 12rem;
+    text-align: center;
+}
+
+.R-button {
+    margin-left: 37.5rem;
+    margin-top: -0.5rem;
+    width: 6rem;
+    height: 1.5rem;
+    list-style-type: none;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+.R-button:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: burlywood;
+    transition: background-color 0s ease-in, transform 0s ease-out
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 234, 5);
+    transition: background-color 0s ease-in, transform 0s ease-out
+}
+
+li:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 234, 5);
+    transition: background-color 0s ease-in, transform 0s ease-out;
+}
+
+.WelcomeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.page {
+    margin-top: 3rem;
+    margin-left: 33rem;
+    position: absolute;
+    font-size: 20px;
+}
+
+.user-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    /* Space between cards */
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.user-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 15rem;
+    /* Fixed width for consistency */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: Arial, sans-serif;
+}
+
+/* Add a subtle hover effect */
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.user-card p:hover {
+    color: #3c651f;
+}
+
+.user-card h3:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(174, 16, 16, 0.15);
+    border-radius: 0.5rem;
+    background-color: bisque;
+}
+
+.form-container {
+    display: flex;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: #1e00e33d;
+    margin-left: 25rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 50px white;
+}
+
+.form-container2 {
+    display: flex;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: #1e00e33d;
+    margin-left: 29rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 50px white;
+
+}
+
+.form-container1 {
+    display: flex;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: #1e00e33d;
+    margin-left: 27rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 50px white;
+}
+
+.user-card-h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.user-card-p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.Adding-Store {
+    display: flex;
+    justify-content: center;
+    Align-items: center;
+    height: 27rem;
+    flex-direction: column;
+    background-color: #1e00e33d;
+    border-radius: 50rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Authbox {
+    display: flex;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    background-color: #1e00e33d;
+    margin-left: 30rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 50px white;
+}
+
+.emaillogo {
+    font-size: larger;
+    margin-left: -14rem;
+}
+
+.password {
+    font-size: larger;
+    margin-left: -12rem;
+    margin-top: -1rem;
+}
+
+.input {
+    margin-left: -1rem;
+    width: 12rem;
+    height: 1.5rem;
+}
+
+.AddingBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.AddingBox button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.AddingBox .FirstDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2rem;
+    width: 9rem;
+    height: 3rem;
+
+}
+
+
+.AddingBox .FirstDiv:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 2rem;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 234, 5);
+    transition: background-color 0s ease-in, transform 0s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0fr));
+    gap: 24px;
+    margin-left: 15rem;
+}
+
+/* --- Card Styles --- */
+.metric-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+}
+
+.metric-card h3 {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0 0 8px;
+}
+
+.metric-card .metric-value {
+    font-size: 3em;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.filter-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-input {
+    padding: 12px 40px 12px 15px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+.filter-input:focus {
+    outline: none; 
+    border-color: #007bff; 
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2); 
+}
+.filter-input::placeholder {
+    color: #999;
+}
+.H2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
