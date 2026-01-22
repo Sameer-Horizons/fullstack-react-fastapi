@@ -41,9 +41,8 @@ export default function ListofStores() {
          e.preventDefault();
     try {
         await axios.post(`${backendurl}/logout`);
-        // 1. Clear local storage/cookies
+        
         localStorage.removeItem('token'); 
-        // 2. Redirect user
         window.location.href = '/Normaluser'; 
     } catch (err) {
         console.error("Logout failed", err);
