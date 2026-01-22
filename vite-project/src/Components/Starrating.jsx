@@ -35,7 +35,7 @@ export default function Starrating({ starCount = 5, productId }) {
 
             console.error("Error saving rating:", error);
             if (error.response) {
-                console.error("Backend Error Message:", error.response.data.message); // <-- This will now show the detailed error
+                console.error("Backend Error Message:", error.response.data.message); 
                 alert("Can't change once done " );
             } else {
                 alert("Failed to save rating .");
