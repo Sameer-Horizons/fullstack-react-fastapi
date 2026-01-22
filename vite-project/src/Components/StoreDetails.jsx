@@ -11,9 +11,9 @@ function StoreDetails() {
          e.preventDefault();
     try {
         await axios.post(`${backendurl}/logout`);
-        // 1. Clear local storage/cookies
+        
         localStorage.removeItem('token'); 
-        // 2. Redirect user
+        
         window.location.href = '/login'; 
     } catch (err) {
         console.error("Logout failed", err);
@@ -84,16 +84,11 @@ function StoreDetails() {
                     ))
                 }
             </div>
-
-            <div>
-                
+            <div>           
             </div>
         </>
     )
-
 }
-
-
 export default StoreDetails;
 
 
