@@ -182,7 +182,7 @@ def save_rating(data: schemas.RatingCreate, db: Session = Depends(get_db)):
     existing_rating = db.query(models.rating).filter(models.rating.productId == data.productId).first()
     
     if existing_rating:
-        existing_rating.rating = data.rating  # Update existing
+        existing_rating.rating = data.rating  
         db.commit()
         return {"message": "Rating updated"}
     new_rating = models.rating(productId=data.productId, rating=data.rating)
