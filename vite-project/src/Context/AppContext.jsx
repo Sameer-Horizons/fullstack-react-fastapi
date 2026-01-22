@@ -8,7 +8,7 @@ export const AppContextProvider = (props) => {
     const [userData, setUserData] = useState(null)
     const verifyUser = async () => {
         try {
-            // Note: Use a dedicated GET endpoint for verification, not /login
+            
             const { data } = await axios.post(`${backendurl}/api/auth/login`);
             if (data.success) {
                 setIsLoggedin(true);
