@@ -73,17 +73,14 @@ def add_register(admin: schemas.Usercreate, db: Session = Depends(get_db)):
     db.refresh(new_user)
     return {"success": True, "message": "User created successfully"}
 
-# --- Login Logic (Admin) ---
+#login logic (admin) 
 @app.post("/login")
 def login(data: schemas.LoginRequest, response: Response, db: Session = Depends(get_db)):
     user = db.query(models.AddAdmin).filter(models.AddAdmin.email == data.email).first()
     
     if not user or not auth.verify_pass(data.password, user.password):
         return {"success": False, "message": "Invalid credentials"}
-
     token = auth.create_token(user.AdminId)
-    
-    
     response.set_cookie(
         key="token",
         value=token,
@@ -93,7 +90,7 @@ def login(data: schemas.LoginRequest, response: Response, db: Session = Depends(
         secure=False  
     )
     return {"success": True}
-# --- Login Logic (User) ---
+#login logic (user)
 @app.post("/loginuser")
 def login(data: schemas.LoginRequest, response: Response, db: Session = Depends(get_db)):
     user = db.query(models.AddUser).filter(models.AddUser.email == data.email).first()
@@ -118,7 +115,7 @@ def login(data: schemas.LoginRequest, response: Response, db: Session = Depends(
         secure=False  
     )
     return {"success": True}
-# --- Adding Store ---
+#adding store 
 @app.post("/add-store")
 def add_store(store: schemas.StoreCreate, db: Session = Depends(get_db)):
     
@@ -144,13 +141,13 @@ def add_store(db: Session = Depends(get_db)):
     getstore = db.query(models.AddUser).all()
     return getstore
 
-# --- Logout ---
+#logout 
 @app.post("/logout")
 def logout(response: Response):
     response.delete_cookie("token")
     return {"success": True, "message": "Logged out"}
 
-# --- Adding Admin with Cookie ---
+#Adding Admin with Cookie 
 @app.post("/adding-admin")
 def adding_admin(data: schemas.AdminCreate, response: Response, db: Session = Depends(get_db)):
     
@@ -179,7 +176,7 @@ def adding_admin(data: schemas.AdminCreate, response: Response, db: Session = De
     )
     return {"success": True}
 
-# --- Rating Logic ---
+#Rating Logic 
 @app.post("/rating", status_code=status.HTTP_201_CREATED)
 def save_rating(data: schemas.RatingCreate, db: Session = Depends(get_db)):
     existing_rating = db.query(models.rating).filter(models.rating.productId == data.productId).first()
